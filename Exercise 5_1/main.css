@@ -1,0 +1,269 @@
+/* Hiệu ứng siêu đẹp cho My Guitar Shop */
+body {
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    background: linear-gradient(120deg, #f8fafc 0%, #e0e7ff 100%);
+    margin: 0;
+    color: #222;
+    min-height: 100vh;
+    transition: background 0.5s;
+}
+
+header {
+    background: linear-gradient(90deg, #6366f1 60%, #4338ca 100%);
+    color: #fff;
+    padding: 40px 0 32px 0;
+    text-align: center;
+    box-shadow: 0 4px 24px rgba(99,102,241,0.12);
+    border-radius: 0 0 32px 32px;
+    letter-spacing: 2px;
+    animation: fadeInDown 1s;
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+main {
+    max-width: 950px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(99,102,241,0.12);
+    padding: 40px 48px;
+    animation: fadeInUp 1s;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1, h2 {
+    color: #6366f1;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 8px rgba(99,102,241,0.08);
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+h1:hover, h2:hover {
+    color: #4338ca;
+}
+
+ul, nav ul {
+    list-style: none;
+    padding: 0;
+}
+ul li, nav ul li {
+    margin-bottom: 14px;
+}
+
+a {
+    color: #6366f1;
+    text-decoration: none;
+    transition: color 0.2s, box-shadow 0.2s;
+    font-weight: 600;
+    border-radius: 6px;
+}
+a:hover {
+    color: #4338ca;
+    text-decoration: underline;
+    box-shadow: 0 2px 8px rgba(99,102,241,0.12);
+}
+
+/* Nút menu siêu đẹp */
+.menu-btn {
+    display: block;
+    background: linear-gradient(90deg, #6366f1 60%, #4338ca 100%);
+    color: #fff;
+    font-weight: 700;
+    border-radius: 12px;
+    padding: 18px 0;
+    font-size: 1.18rem;
+    box-shadow: 0 4px 16px rgba(99,102,241,0.16);
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    margin-bottom: 22px;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+.menu-btn::after {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background: rgba(255,255,255,0.08);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.menu-btn:hover {
+    background: linear-gradient(90deg, #4338ca 60%, #6366f1 100%);
+    color: #fff;
+    transform: scale(1.06);
+    box-shadow: 0 8px 32px rgba(99,102,241,0.22);
+}
+.menu-btn:hover::after {
+    opacity: 1;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-bottom: 32px;
+    background: #f3f4f6;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(99,102,241,0.08);
+    animation: fadeInUp 1s;
+}
+table th, table td {
+    padding: 14px 18px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+    font-size: 1.08rem;
+    transition: background 0.2s;
+}
+table th {
+    background: linear-gradient(90deg, #6366f1 60%, #4338ca 100%);
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: none;
+}
+table tr:last-child td {
+    border-bottom: none;
+}
+table tr:hover td {
+    background: #e0e7ff;
+}
+
+input[type="text"], select {
+    padding: 10px 14px;
+    border: 1.5px solid #6366f1;
+    border-radius: 8px;
+    font-size: 1.08rem;
+    margin-bottom: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border 0.2s, box-shadow 0.2s;
+    box-shadow: 0 1px 4px rgba(99,102,241,0.08);
+}
+input[type="text"]:focus, select:focus {
+    border-color: #4338ca;
+    box-shadow: 0 2px 8px rgba(99,102,241,0.16);
+}
+
+input[type="submit"], button {
+    background: linear-gradient(90deg, #6366f1 60%, #4338ca 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 28px;
+    font-size: 1.08rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(99,102,241,0.12);
+    transition: background 0.2s, transform 0.2s;
+    margin-top: 8px;
+    letter-spacing: 1px;
+}
+input[type="submit"]:hover, button:hover {
+    background: linear-gradient(90deg, #4338ca 60%, #6366f1 100%);
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px rgba(99,102,241,0.18);
+}
+
+footer {
+    background: linear-gradient(90deg, #eef2ff 60%, #c7d2fe 100%);
+    color: #6366f1;
+    text-align: center;
+    padding: 32px 0 16px 0;
+    border-radius: 32px 32px 0 0;
+    margin-top: 40px;
+    font-size: 1.15rem;
+    box-shadow: 0 -2px 12px rgba(99,102,241,0.08);
+    animation: fadeInUp 1s;
+}
+.last_paragraph {
+    margin-top: 32px;
+    text-align: right;
+    font-size: 1.08rem;
+    color: #6366f1;
+}
+
+/* Card siêu đẹp cho product details */
+.card {
+    background: linear-gradient(120deg, #fff 80%, #e0e7ff 100%);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(99,102,241,0.12);
+    padding: 32px;
+    margin-bottom: 40px;
+    animation: fadeInUp 1s;
+    transition: box-shadow 0.2s;
+}
+.card:hover {
+    box-shadow: 0 16px 48px rgba(99,102,241,0.18);
+}
+.card-title {
+    color: #6366f1;
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+}
+.card-text {
+    font-size: 1.15rem;
+    color: #222;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(99,102,241,0.12);
+    transition: box-shadow 0.2s;
+}
+.img-fluid:hover {
+    box-shadow: 0 8px 32px rgba(99,102,241,0.18);
+}
+.shadow-sm {
+    box-shadow: 0 2px 8px rgba(99,102,241,0.12) !important;
+}
+.fw-bold {
+    font-weight: 800;
+}
+.right {
+    text-align: right;
+}
+
+/* Sidebar siêu đẹp */
+aside {
+    background: linear-gradient(120deg, #eef2ff 80%, #c7d2fe 100%);
+    border-radius: 18px;
+    padding: 24px 20px;
+    margin-bottom: 32px;
+    box-shadow: 0 4px 16px rgba(99,102,241,0.08);
+    animation: fadeInLeft 1s;
+}
+
+@keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-40px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+nav ul li a {
+    display: block;
+    padding: 12px 18px;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #fff 60%, #eef2ff 100%);
+    margin-bottom: 8px;
+    box-shadow: 0 2px 8px rgba(99,102,241,0.06);
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+nav ul li a:hover {
+    background: linear-gradient(90deg, #6366f1 60%, #4338ca 100%);
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(99,102,241,0.12);
+}
