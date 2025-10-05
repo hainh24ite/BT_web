@@ -1,5 +1,4 @@
 
-
 <?php include 'view/header.php'; ?>
 <main style="display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:60vh;">
     <div class="card" style="max-width:400px; width:100%; text-align:center;">

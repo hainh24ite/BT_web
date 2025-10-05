@@ -17,9 +17,14 @@ function get_category_name($category_id) {
     $statement->execute();    
     $category = $statement->fetch();
     $statement->closeCursor();    
-    $category_name = $category['categoryName'];
-    return $category_name;
+
+    if ($category && isset($category['categoryName'])) {
+        return $category['categoryName'];
+    } else {
+        return "Unknown"; // hoặc null, tùy bạn muốn hiển thị thế nào
+    }
 }
+
 
 function get_category($category_id) {
     global $db;

@@ -1,0 +1,169 @@
+/* ========== Global Styles ========== */
+html {
+    background-color: #c0c0c0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 760px;
+    margin: 30px auto;
+    padding: 20px 40px;
+    background-color: #fff;
+    border: 1px solid #bbb;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+}
+
+/* ========== Header ========== */
+header {
+    border-bottom: 3px solid #000;
+    padding: 0.5em 0;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+header h1 {
+    color: #000;
+    font-size: 1.8em;
+    letter-spacing: 1px;
+}
+
+/* ========== Main Layout ========== */
+main {
+    margin-top: 10px;
+}
+
+aside {
+    float: left;
+    width: 150px;
+}
+
+section {
+    float: left;
+    width: 500px;
+}
+
+/* ========== Footer ========== */
+footer {
+    clear: both;
+    border-top: 2px solid #000;
+    margin-top: 1em;
+    padding-top: 0.5em;
+}
+
+footer p {
+    text-align: right;
+    font-size: 0.85em;
+    color: #555;
+}
+
+/* ========== Typography ========== */
+h1 {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0.5em 0 0.25em;
+    color: rgb(208, 133, 4);
+}
+
+h2 {
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0.25em 0 0.5em;
+    color: rgb(208, 133, 4);
+}
+
+ul {
+    margin: 0 0 1em 0;
+    padding: 0 0 0 2.5em;
+}
+
+a {
+    color: rgb(41, 64, 124);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(208, 133, 4);
+    text-decoration: underline;
+}
+
+/* ========== Form ========== */
+form {
+    margin: 0;
+}
+
+label {
+    width: 6em;
+    float: left;
+    margin-right: 1em;
+    text-align: right;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 80px;
+}
+
+input[type="submit"] {
+    background-color: rgb(41, 64, 124);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(208, 133, 4);
+}
+
+/* ========== Table ========== */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 1em;
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 0.5em;
+    border-bottom: 1px solid #ccc;
+}
+
+#cart_header th {
+    border-bottom: 2px solid #000;
+    background-color: #f4f4f4;
+}
+
+#cart_footer td {
+    text-align: right;
+    border-top: 2px solid #000;
+    font-weight: bold;
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
+.cart_qty {
+    text-align: right;
+    width: 3em;
+}
+
+/* ========== Misc ========== */
+br {
+    clear: both;
+}

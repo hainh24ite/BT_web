@@ -1,0 +1,105 @@
+/* === Tổng thể trang === */
+html {
+    background: linear-gradient(135deg, #fdfcfb, #e2d1c3);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    width: 700px;
+    margin: 40px auto;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    padding: 30px 40px;
+}
+
+/* === Header === */
+header {
+    border-bottom: 3px solid #ff9800;
+    margin-bottom: 20px;
+    text-align: center;
+}
+header h1 {
+    color: #333;
+    letter-spacing: 1px;
+}
+
+/* === Tiêu đề phụ === */
+h2 {
+    color: #ff9800;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+/* === Danh sách task === */
+ul {
+    padding-left: 1.5em;
+}
+li {
+    background: #f7f7f7;
+    margin-bottom: 8px;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border-left: 5px solid #ff9800;
+    transition: 0.2s ease;
+}
+li:hover {
+    background: #fff3e0;
+}
+
+/* === Lỗi === */
+h2 + ul li {
+    color: #d32f2f;
+    border-left-color: #d32f2f;
+    background: #ffe6e6;
+}
+
+/* === Form === */
+form {
+    margin-top: 10px;
+    padding: 15px 20px;
+    background: #fafafa;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+    margin-right: 10px;
+    color: #333;
+}
+
+input[type="text"], select {
+    width: 250px;
+    padding: 8px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.2s ease;
+}
+input[type="text"]:focus, select:focus {
+    border-color: #ff9800;
+    box-shadow: 0 0 4px #ffcc80;
+}
+
+input[type="submit"] {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s ease;
+    margin-top: 8px;
+}
+input[type="submit"]:hover {
+    background: #e68900;
+}
+
+/* === Khoảng cách và căn chỉnh === */
+br {
+    clear: both;
+}
