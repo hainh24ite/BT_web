@@ -1,0 +1,6 @@
+Hướng dẫn
+- Tạo CSDL có tên dct
+- Import dữ liệu từ tệp dct.sql
+- Chạy tệp index.html
+Bạn có thể sử dụng cho bất kỳ CSDL nào và table nào.
+Nhiệm vụ của bạn: Đặt tên cột của bảng theo ý muốn
